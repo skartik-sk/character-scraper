@@ -1,6 +1,5 @@
 "use client"
 
-import { useState } from "react"
 import Link from "next/link"
 import { HexBackground } from "@/components/hex-background"
 import { AvatarCard } from "@/components/avatar-card"
@@ -16,11 +15,11 @@ const previousAvatars = [
 ]
 
 export default function Home() {
-  const [score, setScore] = useState(0)
+  
 
   return (
     <div className="min-h-screen flex flex-col relative overflow-hidden">
-      <HexBackground onScoreUpdate={setScore} />
+      <HexBackground  />
 
       <header className="w-full p-4 flex justify-between items-center relative z-10">
         <Link href="/" className="flex items-center space-x-2">

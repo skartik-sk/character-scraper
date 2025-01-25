@@ -2,11 +2,9 @@
 
 import { useEffect, useRef } from "react"
 
-interface HexBackgroundProps {
-  onScoreUpdate: (score: number) => void
-}
 
-export function HexBackground({ onScoreUpdate }: HexBackgroundProps) {
+
+export function HexBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
   useEffect(() => {
