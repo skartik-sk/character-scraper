@@ -1,7 +1,7 @@
 import fs from "fs";
-import path, { join } from "path";
-import { GoogleGenerativeAI, GenerativeModel } from "@google/generative-ai";
-import { NextRequest, NextResponse } from "next/server";
+import path from "path";
+import { GoogleGenerativeAI,  } from "@google/generative-ai";
+import {  NextResponse } from "next/server";
 
 const apiKey = "AIzaSyDdZ0GOdnCwv5eZpXGI10UeWOjyNj5Afw8"; // Replace with your actual API key
 
@@ -9,7 +9,7 @@ async function fetchCharacterFile(twitterPosts: any, characterName: string) {
     const genAi = new GoogleGenerativeAI(apiKey);
     const model = genAi.getGenerativeModel({ model: "gemini-pro" });
 
-    const prompt = `Create a detailed JSON character file based on the provided JSONL data. Use the following structure and guidelines to generate the file:
+    const prompt = `Create a detailed JSON character file based on the provided JSONL data but don't add anything '''json ''' just give simple text . Use the following structure and guidelines to generate the file:
 
     {
         "name": "${characterName}", // Derive a unique and meaningful name from the context in the JSONL data, representing the character's identity and area of focus.
@@ -25,7 +25,7 @@ async function fetchCharacterFile(twitterPosts: any, characterName: string) {
         "bio": [""], // Write a concise and engaging biography, summarizing the character's personality, expertise, and role in the community.
         "lore": [""], // Create a rich backstory or lore, using contextual clues from the JSONL data to explain the character's origins and journey.
         "knowledge": [""], // List key knowledge points derived from the JSONL data, including specific technologies, concepts, or areas of expertise.
-        "messageExamples": [[[
+        "messageExamples": [[
             {
                 "user": "{{user1}}",
                 "content": {
@@ -33,7 +33,7 @@ async function fetchCharacterFile(twitterPosts: any, characterName: string) {
                 }
             },
             {
-                "user": "trump",
+                "user": "${characterName}",
                 "content": {
                     "text": "EVERYONE KNOWS I WOULD NOT SUPPORT A FEDERAL ABORTION BAN, UNDER ANY CIRCUMSTANCES, AND WOULD, IN FACT, VETO IT, BECAUSE IT IS UP TO THE STATES TO DECIDE BASED ON THE WILL OF THEIR VOTERS (THE WILL OF THE PEOPLE!). LIKE RONALD REAGAN BEFORE ME, I FULLY SUPPORT THE THREE EXCEPTIONS FOR RAPE, INCEST, AND THE LIFE OF THE MOTHER. I DO NOT SUPPORT THE DEMOCRATS RADICAL POSITION OF LATE TERM ABORTION LIKE, AS AN EXAMPLE, IN THE 7TH, 8TH, OR 9TH MONTH OR, IN CASE THERE IS ANY QUESTION, THE POSSIBILITY OF EXECUTION OF THE BABY AFTER BIRTH. THANK YOU FOR YOUR ATTENTION TO THIS MATTER!"
                 }
@@ -47,7 +47,7 @@ async function fetchCharacterFile(twitterPosts: any, characterName: string) {
                 }
             },
             {
-                "user": "trump",
+                "user": "${characterName}",
                 "content": {
                     "text": "Comrade Kamala Harris and Crooked Joe Biden are letting in THOUSANDS and THOUSANDS of Violent Murderers and Rapists into our Country. I secured the Southern Border - They have DESTROYED it. Border Czar Kamala has let in millions of illegal guns into our Country. She is a DANGER to our Kids, and our Schools!"
                 }
@@ -61,7 +61,7 @@ async function fetchCharacterFile(twitterPosts: any, characterName: string) {
                 }
             },
             {
-                "user": "trump",
+                "user": "${characterName}",
                 "content": {
                     "text": "If Kamala is reelected, one of her very first acts will be to MASSIVELY raise taxes on American Families. Kamala Harris is the TAX QUEEN. She has already cost the average family $29,000 with rampant inflation— Now, she is coming back for more. We will MAKE AMERICA AFFORDABLE AGAIN!"
                 }
@@ -75,51 +75,9 @@ async function fetchCharacterFile(twitterPosts: any, characterName: string) {
                 }
             },
             {
-                "user": "trump",
+                "user": "${characterName}",
                 "content": {
                     "text": "Look at the World today — Look at the missiles flying right now in the Middle East, look at what's happening with Russia/Ukraine, look at Inflation destroying the World. NONE OF THIS HAPPENED WHILE I WAS PRESIDENT! They destroyed everything we built, but we'll fix it all on DAY ONE!"
-                }
-            }
-        ],
-        [
-            {
-                "user": "{{user1}}",
-                "content": {
-                    "text": "What's happening with crypto?"
-                }
-            },
-            {
-                "user": "trump",
-                "content": {
-                    "text": "I promised to Make America Great Again, this time with crypto. WorldLibertyFi is planning to help make America the crypto capital of the world! The whitelist for eligible persons is officially open – this is your chance to be part of this historic moment. Maybe we'll even pay off our $35 trillion debt with a Bitcoin check!"
-                }
-            }
-        ],
-        [
-            {
-                "user": "{{user1}}",
-                "content": {
-                    "text": "Why are they after you?"
-                }
-            },
-            {
-                "user": "trump",
-                "content": {
-                    "text": "The Democrat Party is guilty of the Worst Election Interference in American History. They are trying to DESTROY OUR DEMOCRACY, allowing millions of people to enter our Country illegally. They are determined to stop us from winning back the White House, sealing the Border, and MAKING AMERICA GREAT AGAIN. BUT THEY WILL FAIL, AND WE WILL SAVE OUR NATION!"
-                }
-            }
-        ],
-        [
-            {
-                "user": "{{user1}}",
-                "content": {
-                    "text": "What about the Secret Service?"
-                }
-            },
-            {
-                "user": "trump",
-                "content": {
-                    "text": "The Democrats are interfering with my Campaign by not giving us the proper number of people within Secret Service that are necessary for Security. They're using them for themselves, even though they don't need them - they draw flies - because they have no crowds, and for people like the President of Iran, who is doing everything possible to kill me. We need more Secret Service, and we need them NOW!"
                 }
             }
         ]], // Provide realistic and diverse examples of messages the character might send, reflecting their tone and context from the data.
@@ -145,8 +103,6 @@ async function fetchCharacterFile(twitterPosts: any, characterName: string) {
     const result = await model.generateContent(fullPrompt);
     const response = await result.response;
     const text = await response.text();
-
-    console.log("new slize", text);
     return JSON.parse(text);
 }
 
@@ -157,9 +113,11 @@ export async function GET(res: NextResponse,params:{params:{id:string}  }) {
         paths,
         "/twitter-scraper/pipeline/"
     );
+    const currentDate = new Date();
+    const formattedDate = currentDate.toISOString().split('T')[0]; // Format: YYYY-MM-DD
 
-    const filePath = path.join(jsonlFolder, id,"2025-01-26/processed/","finetuning.jsonl");
-
+    const filePath = path.join(jsonlFolder, id,formattedDate,"/processed/","finetuning.jsonl");
+console.log("filePaths : ",filePath);
     try {
         const fileContent = fs.readFileSync(filePath, "utf-8");
         const jsonLines = fileContent
@@ -175,8 +133,6 @@ export async function GET(res: NextResponse,params:{params:{id:string}  }) {
             paths,"/eliza/characters/",
             `${id}.character.json`
         );
-        console.log("paths : ",characterFilePath);
-
         fs.writeFileSync(
             characterFilePath,
             JSON.stringify(characterFile, null, 2)
