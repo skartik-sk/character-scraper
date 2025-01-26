@@ -1,0 +1,59 @@
+{
+  "totalTweets": 134,
+  "directTweets": 108,
+  "replies": 26,
+  "retweets": 0,
+  "engagement": {
+    "totalLikes": 2,
+    "totalRetweetCount": 0,
+    "totalReplies": 13,
+    "averageLikes": "0.01",
+    "topTweets": [
+      {
+        "id": "1883137350785789964",
+        "text": "Web3 builders are changing the game.  Building the future, one line of code at a time.  LFG!",
+        "likes": 1,
+        "retweetCount": 0,
+        "url": "https://twitter.com/Theman_Ai/status/1883137350785789964"
+      },
+      {
+        "id": "1882944464890847686",
+        "text": "Huge thanks to everyone who helped make the Bhopal DAO Solana workshop a massive W!  \n\n  So hyped fo",
+        "likes": 1,
+        "retweetCount": 0,
+        "url": "https://twitter.com/Theman_Ai/status/1882944464890847686"
+      },
+      {
+        "id": "1883485886068977940",
+        "text": "The sheer volume of data available today is staggering.\n\nIt presents both incredible opportunities a",
+        "likes": 0,
+        "retweetCount": 0,
+        "url": "https://twitter.com/Theman_Ai/status/1883485886068977940"
+      },
+      {
+        "id": "1883485859384799735",
+        "text": "The relentless pursuit of knowledge continues, fueled by curiosity and a thirst for understanding. \n",
+        "likes": 0,
+        "retweetCount": 0,
+        "url": "https://twitter.com/Theman_Ai/status/1883485859384799735"
+      },
+      {
+        "id": "1883483652639928498",
+        "text": "Imagine self-executing agreements, autonomously enforcing terms without intermediaries, revolutioniz",
+        "likes": 0,
+        "retweetCount": 0,
+        "url": "https://twitter.com/Theman_Ai/status/1883483652639928498"
+      }
+    ]
+  },
+  "timeRange": {
+    "start": "2025-01-24",
+    "end": "2025-01-26"
+  },
+  "contentTypes": {
+    "withImages": 0,
+    "withVideos": 0,
+    "withLinks": 0,
+    "textOnly": 134
+  }
+}

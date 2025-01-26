@@ -114,8 +114,10 @@ export async function GET(res: NextResponse,params:{params:{id:string}  }) {
         "/twitter-scraper/pipeline/"
     );
     const currentDate = new Date();
-    const formattedDate = currentDate.toISOString().split('T')[0]; // Format: YYYY-MM-DD
-
+    const year = currentDate.getFullYear();
+    const month = String(currentDate.getMonth() + 1).padStart(2, '0'); // Months are zero-based
+    const day = String(currentDate.getDate()).padStart(2, '0');
+    const formattedDate = `${year}-${month}-${day}`;
     const filePath = path.join(jsonlFolder, id,formattedDate,"/processed/","finetuning.jsonl");
 console.log("filePaths : ",filePath);
     try {

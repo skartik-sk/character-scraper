@@ -1,0 +1,51 @@
+[
+  {
+    "timestamp": "2025-01-26T19:45:08.476Z",
+    "error": {
+      "message": "this.saveProgress is not a function",
+      "stack": "TypeError: this.saveProgress is not a function\n    at TwitterPipeline.cleanup (file:///Users/singupallikartik/Developer/lnm/kar/dump.fun/twitter-scraper/src/twitter/TwitterPipeline.js:866:18)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async TwitterPipeline.run (file:///Users/singupallikartik/Developer/lnm/kar/dump.fun/twitter-scraper/src/twitter/TwitterPipeline.js:769:7)"
+    },
+    "context": {
+      "stage": "pipeline_execution",
+      "runtime": 30.775,
+      "stats": {
+        "requestCount": 0,
+        "rateLimitHits": 0,
+        "retriesCount": 0,
+        "uniqueTweets": 0,
+        "fallbackCount": 0,
+        "startTime": 1737920677701,
+        "oldestTweetDate": "2025-01-24T18:17:58.000Z",
+        "newestTweetDate": "2025-01-26T12:03:23.000Z",
+        "fallbackUsed": false
+      },
+      "username": "theman_ai",
+      "sessionDuration": 30775,
+      "rateLimitHits": 0,
+      "fallbackUsed": false,
+      "fallbackCount": 0
+    },
+    "stats": {
+      "requestCount": 0,
+      "rateLimitHits": 0,
+      "retriesCount": 0,
+      "uniqueTweets": 0,
+      "fallbackCount": 0,
+      "startTime": 1737920677701,
+      "oldestTweetDate": "2025-01-24T18:17:58.000Z",
+      "newestTweetDate": "2025-01-26T12:03:23.000Z",
+      "fallbackUsed": false
+    },
+    "config": {
+      "delays": {
+        "min": 1000,
+        "max": 3000
+      },
+      "retries": 5,
+      "fallback": {
+        "enabled": true,
+        "sessionDuration": 1800000
+      }
+    }
+  }
+]
