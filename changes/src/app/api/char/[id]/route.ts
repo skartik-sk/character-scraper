@@ -151,13 +151,14 @@ async function fetchCharacterFile(twitterPosts: any, characterName: string) {
 }
 
 export async function GET(res: NextResponse,params:{params:{id:string}  }) {
-    const id =  params.params.id;
+    const id = await params.params.id;
+    const paths =  path.dirname(process.cwd());
+    console.log("currect path", paths);
     const jsonlFolder = path.join(
-
-        "/Users/singupallikartik/Developer/lnm/eliza/twitter-scraper/pipeline/"
+        paths,
+        "/twitter-scraper/pipeline/"
     );
     console.log(jsonlFolder)
-    const parentFolderName = path.basename(path.dirname(jsonlFolder));
     const filePath = path.join(jsonlFolder, id,"2025-01-26/processed/","finetuning.jsonl");
 
     try {
@@ -170,11 +171,10 @@ export async function GET(res: NextResponse,params:{params:{id:string}  }) {
             jsonLines,
             id
         );
-        console.log("json", characterFile);
+        console.log("paths : ",             paths,"eliza/characters");
 
         const characterFilePath = path.join(
-
-           "/Users/singupallikartik/Developer/lnm/eliza/characters",
+            paths,"eliza/characters",
             `${id}.character.json`
         );
 

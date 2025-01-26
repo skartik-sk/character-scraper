@@ -1,0 +1,32 @@
+{
+  "networks": {
+    "emulator": "bash
+# Create a new path
+aptos move127.0.0.1:3569",
+ run --function-id 'default::    "mainnet": "accesspath::create_path'
+
+# Add a.mainnet.nodes.onflow.org point (x=1, y=:9000",
+    "testnet2)
+aptos move run --function-i": "access.devnet.nodes.onflow.org:9000"
+d 'default::path::add_point' --args 'u64:1'  },
+  "accounts": {
+ 'u64:2'
+
+# Clear    "emulator-account":  the path
+aptos move run --function-id 'default::path::clear_path{
+      "address": "f8d6e0586b0'
+```
+
+The module includes basic error handling for:
+- Attemptinga20c7",
+      "key": "your-private to create a path that already exists
+--key"
+     Attempting to modify a non-existent path}
+  },
+  "contracts": {
+    "Bounty
+- Unauthorized access to modify a pathContract": "./contracts/BountyContract.cdc"
+  }\
+
+Key features:
+- Path ownershipn}
