@@ -5,6 +5,7 @@ import { HexBackground } from "@/components/hex-background"
 import { AvatarCard } from "@/components/avatar-card"
 import { AvatarCreationForm } from "@/components/avatar-creation-form"
 import { Mountain } from "lucide-react"
+import Scrapper from "@/components/scrapper"
 
 // Mock data for previously generated avatars
 const previousAvatars = [
@@ -37,6 +38,7 @@ export default function Home() {
       </header>
 
       <main className="flex-grow flex flex-col items-center justify-center relative z-10 py-12">
+        <Scrapper />
         <div className="text-center space-y-8 mb-12">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-black">AI Character Generator</h1>
 
