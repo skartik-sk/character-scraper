@@ -1,0 +1,51 @@
+[
+  {
+    "timestamp": "2025-01-24T23:24:27.238Z",
+    "error": {
+      "message": "this.saveProgress is not a function",
+      "stack": "TypeError: this.saveProgress is not a function\n    at TwitterPipeline.cleanup (file:///Users/singupallikartik/Developer/lnm/twitter-scraper-finetune/src/twitter/TwitterPipeline.js:866:18)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async TwitterPipeline.run (file:///Users/singupallikartik/Developer/lnm/twitter-scraper-finetune/src/twitter/TwitterPipeline.js:769:7)"
+    },
+    "context": {
+      "stage": "pipeline_execution",
+      "runtime": 217.538,
+      "stats": {
+        "requestCount": 0,
+        "rateLimitHits": 0,
+        "retriesCount": 1,
+        "uniqueTweets": 0,
+        "fallbackCount": 0,
+        "startTime": 1737760849700,
+        "oldestTweetDate": "2021-09-02T02:08:13.000Z",
+        "newestTweetDate": "2025-01-24T22:25:11.000Z",
+        "fallbackUsed": false
+      },
+      "username": "Divyanshueth",
+      "sessionDuration": 217538,
+      "rateLimitHits": 0,
+      "fallbackUsed": false,
+      "fallbackCount": 0
+    },
+    "stats": {
+      "requestCount": 0,
+      "rateLimitHits": 0,
+      "retriesCount": 1,
+      "uniqueTweets": 0,
+      "fallbackCount": 0,
+      "startTime": 1737760849700,
+      "oldestTweetDate": "2021-09-02T02:08:13.000Z",
+      "newestTweetDate": "2025-01-24T22:25:11.000Z",
+      "fallbackUsed": false
+    },
+    "config": {
+      "delays": {
+        "min": 1000,
+        "max": 3000
+      },
+      "retries": 5,
+      "fallback": {
+        "enabled": true,
+        "sessionDuration": 1800000
+      }
+    }
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "totalTweets": 2805,
+  "directTweets": 934,
+  "replies": 1871,
+  "retweets": 0,
+  "engagement": {
+    "totalLikes": 7309,
+    "totalRetweetCount": 476,
+    "totalReplies": 1377,
+    "averageLikes": "2.61",
+    "topTweets": [
+      {
+        "id": "1719598439355613449",
+        "text": "Ye apple event abhi aana tha?\n\nM3 got released 😭\n\nJust bought this a month ago\n\n#AppleEvent https:/",
+        "likes": 283,
+        "retweetCount": 2,
+        "url": "https://twitter.com/Divyanshueth/status/1719598439355613449"
+      },
+      {
+        "id": "1762150966617358835",
+        "text": "So I have lost it all, all my JUP airdrop tokens are gone in a scam, here is my story so anyone out ",
+        "likes": 69,
+        "retweetCount": 15,
+        "url": "https://twitter.com/Divyanshueth/status/1762150966617358835"
+      },
+      {
+        "id": "1797175192177062322",
+        "text": "Officially on a job hunt now\n\nLooking for some web3 devrel/community dev roles\n\nLike, RT would be a ",
+        "likes": 67,
+        "retweetCount": 10,
+        "url": "https://twitter.com/Divyanshueth/status/1797175192177062322"
+      },
+      {
+        "id": "1836766605076021513",
+        "text": "Cool Swags @axelar interop summit\n\nMade some great frens and talked about Axelar Research Collective",
+        "likes": 58,
+        "retweetCount": 9,
+        "url": "https://twitter.com/Divyanshueth/status/1836766605076021513"
+      },
+      {
+        "id": "1879574429837271421",
+        "text": "Teaming up builders @Bhopal_DAO \n\n- organised eth builders day 2.0 by @EFDevcon \n- onboarded people ",
+        "likes": 49,
+        "retweetCount": 8,
+        "url": "https://twitter.com/Divyanshueth/status/1879574429837271421"
+      }
+    ]
+  },
+  "timeRange": {
+    "start": "2021-09-02",
+    "end": "2025-01-25"
+  },
+  "contentTypes": {
+    "withImages": 293,
+    "withVideos": 27,
+    "withLinks": 177,
+    "textOnly": 2337
+  }
+}

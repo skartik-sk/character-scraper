@@ -1,0 +1,59 @@
+{
+  "totalTweets": 238,
+  "directTweets": 107,
+  "replies": 131,
+  "retweets": 0,
+  "engagement": {
+    "totalLikes": 757,
+    "totalRetweetCount": 44,
+    "totalReplies": 128,
+    "averageLikes": "3.18",
+    "topTweets": [
+      {
+        "id": "1864641085441757553",
+        "text": "Learning chain abstraction at IBW2024 with found of @routerprotocol https://t.co/85UcDR4UYq",
+        "likes": 25,
+        "retweetCount": 1,
+        "url": "https://twitter.com/SKartik_SK/status/1864641085441757553"
+      },
+      {
+        "id": "1835035784765968840",
+        "text": "A cup of Coffee with great and innovative ideas. @SuperteamIN \n.\n.\n#SolanaProjects @Bhopal_DAO  @Ryt",
+        "likes": 18,
+        "retweetCount": 3,
+        "url": "https://twitter.com/SKartik_SK/status/1835035784765968840"
+      },
+      {
+        "id": "1862961308896833962",
+        "text": "What a W day..Attended eth builder day by @Bhopal_DAO \n\nCreated onchain portfolio all thanks to @sum",
+        "likes": 16,
+        "retweetCount": 4,
+        "url": "https://twitter.com/SKartik_SK/status/1862961308896833962"
+      },
+      {
+        "id": "1842079509014839778",
+        "text": "Finally, with this project, my web development journey with @thedevoic  has come to an end! 🚀\n\nWhat",
+        "likes": 16,
+        "retweetCount": 3,
+        "url": "https://twitter.com/SKartik_SK/status/1842079509014839778"
+      },
+      {
+        "id": "1861902734930452576",
+        "text": "Typical Web3 folks @praneshz_ @Akshat__Maurya at 4am😵‍💫 https://t.co/pGIylhn3S7",
+        "likes": 15,
+        "retweetCount": 2,
+        "url": "https://twitter.com/SKartik_SK/status/1861902734930452576"
+      }
+    ]
+  },
+  "timeRange": {
+    "start": "2022-11-15",
+    "end": "2025-01-26"
+  },
+  "contentTypes": {
+    "withImages": 54,
+    "withVideos": 8,
+    "withLinks": 13,
+    "textOnly": 166
+  }
+}

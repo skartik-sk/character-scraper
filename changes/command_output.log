@@ -1,0 +1,22 @@
+
+Command: shopt -s histappend
+Output:
+
+Exit Code: 0
+----
+Command: pwd
+Output:
+/Users/singupallikartik/Developer/lnm/pranesh/dump.fun
+Exit Code: 0
+----
+Command: npm i
+Output:
+
+up to date, audited 418 packages in 917ms
+
+146 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+Exit Code: 0
+----

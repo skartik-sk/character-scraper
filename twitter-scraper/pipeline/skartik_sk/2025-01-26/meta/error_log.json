@@ -1,0 +1,100 @@
+[
+  {
+    "timestamp": "2025-01-26T11:45:42.651Z",
+    "error": {
+      "message": "this.saveProgress is not a function",
+      "stack": "TypeError: this.saveProgress is not a function\n    at TwitterPipeline.cleanup (file:///Users/singupallikartik/Developer/lnm/eliza/twitter-scraper/src/twitter/TwitterPipeline.js:866:18)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async TwitterPipeline.run (file:///Users/singupallikartik/Developer/lnm/eliza/twitter-scraper/src/twitter/TwitterPipeline.js:769:7)"
+    },
+    "context": {
+      "stage": "pipeline_execution",
+      "runtime": 2024.924,
+      "stats": {
+        "requestCount": 0,
+        "rateLimitHits": 0,
+        "retriesCount": 0,
+        "uniqueTweets": 0,
+        "fallbackCount": 0,
+        "startTime": 1737889917727,
+        "oldestTweetDate": "2022-11-15T08:03:12.000Z",
+        "newestTweetDate": "2025-01-26T10:54:32.000Z",
+        "fallbackUsed": false
+      },
+      "username": "skartik_sk",
+      "sessionDuration": 2024925,
+      "rateLimitHits": 0,
+      "fallbackUsed": false,
+      "fallbackCount": 0
+    },
+    "stats": {
+      "requestCount": 0,
+      "rateLimitHits": 0,
+      "retriesCount": 0,
+      "uniqueTweets": 0,
+      "fallbackCount": 0,
+      "startTime": 1737889917727,
+      "oldestTweetDate": "2022-11-15T08:03:12.000Z",
+      "newestTweetDate": "2025-01-26T10:54:32.000Z",
+      "fallbackUsed": false
+    },
+    "config": {
+      "delays": {
+        "min": 1000,
+        "max": 3000
+      },
+      "retries": 5,
+      "fallback": {
+        "enabled": true,
+        "sessionDuration": 1800000
+      }
+    }
+  },
+  {
+    "timestamp": "2025-01-26T11:59:34.305Z",
+    "error": {
+      "message": "this.saveProgress is not a function",
+      "stack": "TypeError: this.saveProgress is not a function\n    at TwitterPipeline.cleanup (file:///Users/singupallikartik/Developer/lnm/eliza/twitter-scraper/src/twitter/TwitterPipeline.js:866:18)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async TwitterPipeline.run (file:///Users/singupallikartik/Developer/lnm/eliza/twitter-scraper/src/twitter/TwitterPipeline.js:769:7)"
+    },
+    "context": {
+      "stage": "pipeline_execution",
+      "runtime": 26.346,
+      "stats": {
+        "requestCount": 0,
+        "rateLimitHits": 0,
+        "retriesCount": 0,
+        "uniqueTweets": 0,
+        "fallbackCount": 0,
+        "startTime": 1737892747959,
+        "oldestTweetDate": "2022-11-15T08:03:12.000Z",
+        "newestTweetDate": "2025-01-26T10:54:32.000Z",
+        "fallbackUsed": false
+      },
+      "username": "skartik_sk",
+      "sessionDuration": 26346,
+      "rateLimitHits": 0,
+      "fallbackUsed": false,
+      "fallbackCount": 0
+    },
+    "stats": {
+      "requestCount": 0,
+      "rateLimitHits": 0,
+      "retriesCount": 0,
+      "uniqueTweets": 0,
+      "fallbackCount": 0,
+      "startTime": 1737892747959,
+      "oldestTweetDate": "2022-11-15T08:03:12.000Z",
+      "newestTweetDate": "2025-01-26T10:54:32.000Z",
+      "fallbackUsed": false
+    },
+    "config": {
+      "delays": {
+        "min": 1000,
+        "max": 3000
+      },
+      "retries": 5,
+      "fallback": {
+        "enabled": true,
+        "sessionDuration": 1800000
+      }
+    }
+  }
+]

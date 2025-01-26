@@ -1,0 +1,100 @@
+[
+  {
+    "timestamp": "2025-01-24T23:17:23.005Z",
+    "error": {
+      "message": "User not found.",
+      "stack": "Error: User not found.\n    at getProfile (file:///Users/singupallikartik/Developer/lnm/twitter-scraper-finetune/node_modules/.pnpm/agent-twitter-client@0.0.13/node_modules/agent-twitter-client/dist/node/esm/index.mjs:667:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async Scraper.getProfile (file:///Users/singupallikartik/Developer/lnm/twitter-scraper-finetune/node_modules/.pnpm/agent-twitter-client@0.0.13/node_modules/agent-twitter-client/dist/node/esm/index.mjs:1943:17)\n    at async TwitterPipeline.collectTweets (file:///Users/singupallikartik/Developer/lnm/twitter-scraper-finetune/src/twitter/TwitterPipeline.js:477:23)\n    at async TwitterPipeline.run (file:///Users/singupallikartik/Developer/lnm/twitter-scraper-finetune/src/twitter/TwitterPipeline.js:667:25)"
+    },
+    "context": {
+      "stage": "pipeline_execution",
+      "runtime": 10.99,
+      "stats": {
+        "requestCount": 0,
+        "rateLimitHits": 0,
+        "retriesCount": 0,
+        "uniqueTweets": 0,
+        "fallbackCount": 0,
+        "startTime": 1737760632015,
+        "oldestTweetDate": null,
+        "newestTweetDate": null,
+        "fallbackUsed": false
+      },
+      "username": "--",
+      "sessionDuration": 10990,
+      "rateLimitHits": 0,
+      "fallbackUsed": false,
+      "fallbackCount": 0
+    },
+    "stats": {
+      "requestCount": 0,
+      "rateLimitHits": 0,
+      "retriesCount": 0,
+      "uniqueTweets": 0,
+      "fallbackCount": 0,
+      "startTime": 1737760632015,
+      "oldestTweetDate": null,
+      "newestTweetDate": null,
+      "fallbackUsed": false
+    },
+    "config": {
+      "delays": {
+        "min": 1000,
+        "max": 3000
+      },
+      "retries": 5,
+      "fallback": {
+        "enabled": true,
+        "sessionDuration": 1800000
+      }
+    }
+  },
+  {
+    "timestamp": "2025-01-24T23:18:56.478Z",
+    "error": {
+      "message": "User not found.",
+      "stack": "Error: User not found.\n    at getProfile (file:///Users/singupallikartik/Developer/lnm/twitter-scraper-finetune/node_modules/.pnpm/agent-twitter-client@0.0.13/node_modules/agent-twitter-client/dist/node/esm/index.mjs:667:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async Scraper.getProfile (file:///Users/singupallikartik/Developer/lnm/twitter-scraper-finetune/node_modules/.pnpm/agent-twitter-client@0.0.13/node_modules/agent-twitter-client/dist/node/esm/index.mjs:1943:17)\n    at async TwitterPipeline.collectTweets (file:///Users/singupallikartik/Developer/lnm/twitter-scraper-finetune/src/twitter/TwitterPipeline.js:477:23)\n    at async TwitterPipeline.run (file:///Users/singupallikartik/Developer/lnm/twitter-scraper-finetune/src/twitter/TwitterPipeline.js:667:25)"
+    },
+    "context": {
+      "stage": "pipeline_execution",
+      "runtime": 11.307,
+      "stats": {
+        "requestCount": 0,
+        "rateLimitHits": 0,
+        "retriesCount": 0,
+        "uniqueTweets": 0,
+        "fallbackCount": 0,
+        "startTime": 1737760725171,
+        "oldestTweetDate": null,
+        "newestTweetDate": null,
+        "fallbackUsed": false
+      },
+      "username": "--",
+      "sessionDuration": 11308,
+      "rateLimitHits": 0,
+      "fallbackUsed": false,
+      "fallbackCount": 0
+    },
+    "stats": {
+      "requestCount": 0,
+      "rateLimitHits": 0,
+      "retriesCount": 0,
+      "uniqueTweets": 0,
+      "fallbackCount": 0,
+      "startTime": 1737760725171,
+      "oldestTweetDate": null,
+      "newestTweetDate": null,
+      "fallbackUsed": false
+    },
+    "config": {
+      "delays": {
+        "min": 1000,
+        "max": 3000
+      },
+      "retries": 5,
+      "fallback": {
+        "enabled": true,
+        "sessionDuration": 1800000
+      }
+    }
+  }
+]

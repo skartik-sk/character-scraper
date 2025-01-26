@@ -1,0 +1,59 @@
+{
+  "totalTweets": 205,
+  "directTweets": 68,
+  "replies": 137,
+  "retweets": 0,
+  "engagement": {
+    "totalLikes": 551,
+    "totalRetweetCount": 43,
+    "totalReplies": 112,
+    "averageLikes": "2.69",
+    "topTweets": [
+      {
+        "id": "1879593328909721890",
+        "text": "ETH Builders Day 2.0 was next-level 🔥.\n\nGot hands-on with Crypto x AI, built an AI agent, and conne",
+        "likes": 16,
+        "retweetCount": 2,
+        "url": "https://twitter.com/praneshz_/status/1879593328909721890"
+      },
+      {
+        "id": "1799483992804364314",
+        "text": "Getting all the 🔥 from last night's Solana ecosystem call. Let's keep building! 💪 #Solana \n@Rythme",
+        "likes": 15,
+        "retweetCount": 3,
+        "url": "https://twitter.com/praneshz_/status/1799483992804364314"
+      },
+      {
+        "id": "1860666897819161025",
+        "text": "So here I am, with a ton of pending work, yet I find myself on Twitter, writing this thread 🧵\n\nBut ",
+        "likes": 14,
+        "retweetCount": 1,
+        "url": "https://twitter.com/praneshz_/status/1860666897819161025"
+      },
+      {
+        "id": "1799100299724161188",
+        "text": "Here's a pic from Solana Ecosystem Call IRL - Bhopal, India with @swarnasn29 @Abhineet_baghel @Rythm",
+        "likes": 14,
+        "retweetCount": 2,
+        "url": "https://twitter.com/praneshz_/status/1799100299724161188"
+      },
+      {
+        "id": "1864608689430147558",
+        "text": "Meet @TonyCatoff at #IBW2024  after his win at #BoxingBay3 https://t.co/DrxC6z6oUY",
+        "likes": 13,
+        "retweetCount": 0,
+        "url": "https://twitter.com/praneshz_/status/1864608689430147558"
+      }
+    ]
+  },
+  "timeRange": {
+    "start": "2021-05-24",
+    "end": "2025-01-24"
+  },
+  "contentTypes": {
+    "withImages": 38,
+    "withVideos": 8,
+    "withLinks": 8,
+    "textOnly": 154
+  }
+}
