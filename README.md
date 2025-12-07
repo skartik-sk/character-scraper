@@ -61,6 +61,8 @@ MIN_DELAY=1000               # Minimum delay between requests (ms)
 MAX_DELAY=3000               # Maximum delay between requests (ms)
 ```
 
+> **🔒 Security Note**: Never commit your `.env` file to version control. It's already included in `.gitignore` to protect your credentials.
+
 For character generation, also add:
 ```env
 OPENAI_API_KEY=your_openai_api_key
