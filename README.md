@@ -21,6 +21,8 @@ This application scrapes Twitter data from any person's profile and produces JSO
 
 ### 1. Installation
 
+Navigate to the `twitter-scraper` directory and install dependencies:
+
 ```bash
 cd twitter-scraper
 npm install
@@ -34,10 +36,9 @@ pnpm install
 
 ### 2. Configuration
 
-Copy the `.env.example` file to `.env` in the `twitter-scraper` directory:
+Copy the `.env.example` file to `.env` (from within the `twitter-scraper` directory):
 
 ```bash
-cd twitter-scraper
 cp .env.example .env
 ```
 
@@ -67,7 +68,11 @@ OPENAI_API_KEY=your_openai_api_key
 
 ## 📖 Usage Guide
 
-All commands should be run from the `twitter-scraper` directory.
+All commands should be run from within the `twitter-scraper` directory:
+
+```bash
+cd twitter-scraper
+```
 
 ### Scrape Twitter Data
 
