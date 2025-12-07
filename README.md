@@ -14,7 +14,7 @@ This application scrapes Twitter data from any person's profile and produces JSO
 
 - Node.js (v16 or higher)
 - npm or pnpm
-- Twitter account credentials (dedicated account recommended)
+- Twitter account credentials (**dedicated account REQUIRED - see warning below**)
 - OpenAI API key (for character generation)
 
 ## 🚀 Quick Start
@@ -46,9 +46,9 @@ Edit the `.env` file with your credentials:
 
 ```env
 # (Required) Twitter Authentication
-TWITTER_USERNAME=your_twitter_username
-TWITTER_PASSWORD=your_twitter_password
-TWITTER_EMAIL=your_twitter_email
+TWITTER_USERNAME=your_username_here
+TWITTER_PASSWORD=your_password_here
+TWITTER_EMAIL=your_email_here
 
 # (Optional) Blog Configuration
 BLOG_URLS_FILE=path/to/blog_urls.txt
@@ -61,7 +61,7 @@ MIN_DELAY=1000               # Minimum delay between requests (ms)
 MAX_DELAY=3000               # Maximum delay between requests (ms)
 ```
 
-> **🔒 Security Note**: Never commit your `.env` file to version control. It's already included in `.gitignore` to protect your credentials.
+> **🔒 Security Note**: Replace the placeholder values above with your actual credentials. Never commit your `.env` file to version control. It's already included in `.gitignore` to protect your credentials.
 
 For character generation, also add:
 ```env
